@@ -1,3 +1,6 @@
+##############
+# Additional utility methods for the Ruby Array class.
+
 class Array
 
   ################
