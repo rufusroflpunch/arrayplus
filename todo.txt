@@ -1,0 +1,5 @@
+(A) Tests for each method
+(B) Skip method
+(B) alt_skip method
+(B) Methods to sum, subtract and multiply all elements by a starting value
+(B) Methods to pad an array with new values between old elements
