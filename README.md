@@ -13,4 +13,6 @@ functionality to Ruby Arrays.
 
 ## How To use
 
-See documentation available in doc/ folder.
+Run this command in the main gem folder to generate documentation.
+
+    $ rdoc
