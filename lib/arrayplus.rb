@@ -70,11 +70,7 @@ class Array
   # Same as #pad, but also modifies the original array
 
   def pad!(padding, num=1)
-    new_arr = []
-    self.each { |i| new_arr << [padding]*num << i }
-    new_arr << [padding]*num
-    self.replace new_arr.flatten
-    return self
+    self.replace self.pad(padding, num) 
   end
 
 end
