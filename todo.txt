@@ -3,3 +3,4 @@
 (B) alt_skip method
 (B) Methods to sum, subtract and multiply all elements by a starting value
 (B) Methods to pad an array with new values between old elements
+(B) to_s override method
