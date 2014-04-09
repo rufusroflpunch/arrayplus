@@ -3,6 +3,7 @@ require 'minitest/pride'
 
 require_relative '../lib/arrayplus'
 require_relative '../lib/arrayplus/to_s'
+require_relative '../lib/arrayplus/to_sentence'
 
 describe Array do
 
@@ -70,6 +71,19 @@ describe Array do
   describe "getting the tail of the array" do
     it "will return all but the first element of the array" do
       @array.drop(1).must_equal (2..12).to_a
+    end
+  end
+
+  describe "creating an array from a sentence" do
+    it "will return a gramatically correct sentence" do
+      ["one", "two", "three"].to_sentence(last_word_connector: " or ").must_equal "One, two or three."
+    end
+  end
+
+  describe "creating an array from a sentence" do
+    it "will return a gramatically incorrect sentence"do
+      d = ["one", "two", "three"].to_sentence(capitalize: false, end_punctuation: "")
+      d.must_equal "one, two and three"
     end
   end
 end
