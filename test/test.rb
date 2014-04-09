@@ -60,4 +60,16 @@ describe Array do
       @array3.to_s.must_equal "h3110 w0r1d"
     end
   end
+
+  describe "executing the head method" do
+    it "will return the first element of the array" do
+      @array.head.must_equal 1
+    end
+  end
+
+  describe "getting the tail of the array" do
+    it "will return all but the first element of the array" do
+      @array.drop(1).must_equal (2..12).to_a
+    end
+  end
 end

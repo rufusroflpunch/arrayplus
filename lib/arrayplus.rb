@@ -73,4 +73,20 @@ class Array
     self.replace self.pad(padding, num) 
   end
 
+  #################
+  # Alias for +first+
+  #   [1, 2, 3].head # ==> 1
+
+  def head
+    self.first
+  end
+
+  #################
+  # Return all but the first element of the array (useful for functional
+  # style programming).
+  #   [1, 2, 3, 4].tail # ==> [2, 3, 4]
+
+  def tail
+    self.drop(1)
+  end
 end
